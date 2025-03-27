@@ -8,8 +8,8 @@ html, body {
 
 .tekst-vieta {
   position: absolute;
-  top: 1%;
+  top: 0;
   left: 1%;
   font-size: 18px;
-  padding: 10px;
+  padding: 5px;
 }
