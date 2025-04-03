@@ -121,8 +121,11 @@ html, body {
 }
 
 .main-image {
-  max-width: 100%;
+  max-width: 65%;
   height: auto;
   margin-top: 20px;
   border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
