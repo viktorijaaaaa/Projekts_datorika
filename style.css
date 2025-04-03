@@ -119,3 +119,10 @@ html, body {
 .submit-btn:hover {
   background-color: #7fbbcb;
 }
+
+.main-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+}
