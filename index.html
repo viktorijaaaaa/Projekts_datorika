@@ -23,30 +23,87 @@
       <h2>Sākums</h2>
     </div>
     <div class="content">
-      <div class="content-wrapper">
-        <div class="image-container">
-          <img src="image 1.png" alt="LUMEA attēls" class="main-image">
-           <div class="text-overlay">Tavs ādas mirdzums sākas šeit.</div>
-         
+    <div class="content-wrapper">
+      <div class="image-container">
+        <img src="image 2.png" alt="LUMEA attēls" class="main-image">
+      </div>                      
+      </div>
+    </div>
+    
+    <style>
+      .image-container {
+      display: flex;
+        justify-content: center;
+        gap: 5px ;
+        flex-wrap: wrap; 
+      }
+              .mazas-bildes img{
+                width: 90px;
+                height: 90px;
+             }
+            </style>
+
+      <div class="image-container">
+        <div class="mazas-bildes">
+          <img src="image 6.png" alt="LUMEA attēls" class="main-image">
+          <p></p>
+        </div>
+        <div class="mazas-bildes">
+          <img src="image 4.png" alt="LUMEA attēls" class="main-image">
+          <p></p>
+        </div>
+        <div class="mazas-bildes">
+          <img src="image 5.png" alt="LUMEA attēls" class="main-image">
+          <p></p>
+        </div>
           
+         
+        
         </div>
       </div>
     </div>
   </div>
   
-  <script src="script.js"></script>
+  <style>
+     .content {
+display: flex;
+  flex-direction: column;
+       align-items: center;
+justify-content: center;
+text-align: center;
+ }
+    .image.container {
+      gap: 10px 0;
+    }
+.image {
+display: block;
+gap:  0 auto;;
+  
+}
+ </style> 
+ 
+  <div class="text-over-image">
+    <p>Tavs ādas mirdzums sākas šeit
+    </p>
+  </div>
+  <script>
+    const image = document.querySelector('.main-image');
+    const text = document.querySelector('.text-over-image');
+
+    // Position the text over the image
+    text.style.position = 'absolute';
+    text.style.top = '80%';
+    text.style.left = '50%';
+    text.style.transform = 'translate(-50%, -50%)';
+
+    // Make sure the text is visible on top of the image
+    text.style.zIndex = '1';
+  </script>
+
+  
+  
+
+  
 </body>
 </html>
- 
-  <style>
-    .text-overlay {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 2em;
-      color: black;
-      text-align: center;
-      line-height: 1.3; /* Three lines */
-    }
-  </style>
+    
